@@ -117,7 +117,7 @@ function proplist(val){
   var variables = "p="+properties;  
   //console.log(variables);
 
-  xhttp.open("GET", '../intranet/contracts/propertieslist.php?' + variables, true);
+  xhttp.open("GET", 'propertieslist.php?' + variables, true);
   xhttp.send();
 }
 
@@ -138,7 +138,7 @@ function tractlist(p){
     };
 
   var variables = "id="+entry_id; 
-  xhttp.open("GET", '../intranet/contracts/tractdropdown.php?' + variables, true);
+  xhttp.open("GET", 'tractdropdown.php?' + variables, true);
   xhttp.send();
 }
 
@@ -156,7 +156,7 @@ function sCreateUrl(){
   };
 
   var variables = "sp="+sp+"&idprop="+idprop+"&idtract="+idtract+"&entity="+entity; 
-  xhttp.open("GET", '../intranet/geturltracking.php?' + variables, true);
+  xhttp.open("GET", 'geturltracking.php?' + variables, true);
   xhttp.send();
 }
 </script>
